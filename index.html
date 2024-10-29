@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatura 2024 - 3º ano D</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
+    
+    <header>
+        <div class="title-section">
+            <div class="star">
+                <img src="imagens/estrelas.png" alt="Star Icon">
+            </div>
+            <div class="title-text">
+                <h1>FORMATURA 2024 - 3º ano D</h1>
+            </div>
+            <div class="star">
+                <img src="imagens/estrelas.png" alt="Star Icon">
+            </div>
+        </div>
+        <div class="container">
             <div class="nav">
                 <div class="nav-item">
-                    <span class="dot"></span> 
-                    <span>Álbum de Fotos</span> 
-                    <img src="camera-icon.png" alt="Álbum de Fotos">
+                    <img src="imagens/camera-icon.png" alt="Álbum de Fotos">
+                    <span> Álbum de Fotos </span>
+                    <img src="imagens/camera-icon.png" alt="Álbum de Fotos">
                 </div>
                 <div class="nav-item">
-                    <img src="class-photo-icon.png" alt="Foto da Turma">
+                    <img src="imagens/class-photo-icon.png" alt="Cobertura da Formatura">
+                    <span>Cobertura da Formatura</span>
+                    <img src="imagens/class-photo-icon.png" alt="Cobertura da Formatura">
                 </div>
                 <div class="nav-item">
-                    <span class="dot"></span> 
-                    <span>Cobertura da Formatura</span> 
-                    <img src="camera-icon.png" alt="Cobertura da Formatura">
-                </div>
-                <div class="nav-item">
-                    <span class="dot"></span> 
-                    <span>Retrospectiva 2024</span> 
-                    <img src="calendar-icon.png" alt="Retrospectiva 2024">
+                    <img src="imagens/calendar-icon.png" alt="Retrospectiva 2024">
+                    <span>Retrospectiva 2024</span>
+                    <img src="imagens/calendar-icon.png" alt="Retrospectiva 2024">
                 </div>
             </div>
-        </header>
-        
-        <main>
-            <div class="title-section">
-                <div class="star">
-                    <img src="estrelas.png" alt="Star Icon">
-                </div>
-                <div class="title-text">
-                    <h1>FORMATURA 2024 - 3º ano D</h1>
-                </div>
-                <div class="star">
-                    <img src="estrelas.png" alt="Star Icon">
-                </div>
-            </div>
-            <h2>Ajude na nossa vaquinha!</h2>
-            <div class="pix">
-                <span>PIX:</span>
-                <input type="text" placeholder="Chave Pix">
-            </div>
-            
-            <div class="teachers-section">
-                <div class="teacher-box">
-                    <p>Texto do Professor</p>
-                    <img src="text-icon.png" alt="Texto do Professor">
-                </div>
-                <div class="teacher-box">
-                    <p>Foto do Professor</p>
-                    <img src="teacher-photo.png" alt="Foto do Professor">
-                </div>
-                <div class="teacher-box">
-                    <p>Foto do Professor</p>
-                    <img src="teacher-photo.png" alt="Foto do Professor">
-                </div>
-                <div class="teacher-box">
-                    <p>Texto do Professor</p>
-                    <img src="text-icon.png" alt="Texto do Professor">
+        </div>
+    </header>
+
+    <main>
+        <h2>Ajude na nossa vaquinha!</h2>
+        <div class="pix">
+            <span>PIX:</span>
+            <input type="text" placeholder="Chave Pix">
+        </div>
+
+        <div class="carousel-wrapper">
+            <!-- Carrossel de Texto (Esquerda) -->
+            <div class="text-carousel-container">
+                <div class="text-carousel" id="carousel-text">
+                    <p></p>
                 </div>
             </div>
-            
-            <div class="instagram-section">
-                <img src="instagram-icon.png" alt="Instagram da Sala">
-                <p>Instagram da sala</p>
+    
+            <!-- Carrossel de Imagens (Direita) -->
+            <div class="image-carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="imagens/imagem_1.jpeg" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagens/imagem_2.jpeg" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagens/imagem_3.jpeg" alt="Imagem 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagens/imagem_4.jpeg" alt="Imagem 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagens/imagem_5.jpeg" alt="Imagem 5">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagens/imagem_6.jpeg" alt="Imagem 6">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="imagens/imagem_7.jpeg" alt="Imagem 6">
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
             </div>
-        </main>
-    </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="instagram-section">
+            <img src="imagens/instagram-icon.png" alt="Instagram da Sala">
+            <p>Instagram da sala</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
